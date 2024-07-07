@@ -1,0 +1,90 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #e8eeef;
+}
+
+nav{
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap:50px;
+    align-items: center;
+}
+
+nav ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+}
+
+nav li a{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.box{
+    margin-top: 50px;
+    display: grid;
+    grid-template: auto / repeat(4,1fr);
+    gap: 15px;
+}
+
+.card{
+    background-color: #e8eeef;
+    border-radius: 8px;
+    padding: 10px;
+}
+.grid-area{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: auto auto;
+    gap: 15px;
+    grid-template-areas: "area1 area3" "area2 area3";
+    margin: 20px 0;
+}
+
+.area1{
+    grid-area: area1;
+    border-radius: 8px;
+    width: 200px;
+    height: 120px;
+    background-color: aquamarine;
+}
+.area2{
+    grid-area: area2;
+    border-radius: 8px;
+    width: 220px;
+    height: 100px;
+    background-color: rgb(246, 150, 255);
+}
+.area3{
+    grid-area: area3;
+    border-radius: 8px;
+    width: 800px;
+    height: 240px;
+    background-color: rgb(217, 255, 127);
+    justify-self:end
+}
+
+footer{
+    background-color: #e8eeef;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px,auto));
+    justify-content: space-evenly;
+}
